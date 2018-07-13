@@ -6,7 +6,7 @@ Express Starter kit is express js framework and boilerplat, which contains the d
 
 Installation process is easy, you can only download or clone application from git
 
-1. clone from git `git clone https://github.com/tariqulislam/express-starter-kit.git`
+1. clone from git `git clone https://github.com/tariqulislam/express-auth-rest-api.git`
 2. then go to express-starter-kit by `cd express-starter-kit`
 3. Install Yarn package `npm install -g yarn`
 4. run command `yarn install`
@@ -46,6 +46,8 @@ Installation process is easy, you can only download or clone application from gi
 
 7. Migrate the Database with `node_modules/.bin/sequelize db:migrate`
 8. run the command `yarn nodemon`
+9. To browse the site use `http://localhost:3000`
+10. To brows the swagger api documentation `http://localhost:3000/api-docs
 
 
 ## developer must have knowledge about
