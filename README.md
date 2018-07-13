@@ -77,7 +77,6 @@ Installation process is easy, you can only download or clone application from gi
 
     The project has Nodemon server to auto lookup the changes at working directory of project.
 
-![alt text](https://github.com/tariqulislam/express-starter-kit/blob/feature/user-guide/public/images/nodemoon.png)
 
 
 **For PM2 Installation**
