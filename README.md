@@ -1,6 +1,6 @@
 
 # express-auth-api-example
-Express Starter kit is express js framework and boilerplat, which contains the different features, those are helps the developer to start web api development easily. Developer can easily code, test, documented the api during the development process. It also have good architecture, which helps the developer to maintain the code.
+THis framework and boilerplat, which contains the different features, those are helps the developer to start web api development easily. Developer can easily code, test, documented the api during the development process. It also have good architecture, which helps the developer to maintain the code.
 
 ## Installation
 
@@ -49,6 +49,36 @@ Installation process is easy, you can only download or clone application from gi
 9. To browse the site use `http://localhost:3000`
 10. To brows the swagger api documentation `http://localhost:3000/api-docs
 
+## Project Structure
+```
+--------------------
+|--| bin
+|----| www (express generate application runner)
+|--| config
+|----| config.js (Database configuration file for sequelize)
+|----| swaggerconfig.js (Swagger configuration file for project(customized))
+|--| core (Custom function and helper function folder)
+|--| middleware(express router middleware to protect the server from unwanted client request)
+|--| migrations(sequelize created migration folder and it contains the database and model mapping files)
+|----| 202020202-created-admin.js (migration file)
+|--| model (sequelize created model folder and customer model folder also)
+|--| route (express routes or api endpoint folder)
+|----| admins.js (routes end point file)
+|--| seeders (sequelize created seed folder for database)
+|--| services (customer folder which contains all the business logic for application)
+|----| admin (module wise service)
+|------| AdminService.js (service file)
+|--| test (Mocha, chai and chai http testing folder, api testing and test automation folder)
+|--| public (Assets folder fro project)
+|--| views (client side view folder contains ejs view engine file)
+|--| .env (dotenv configuration file to control node environment)
+|--| .editorconfig (fixing the code style in different editor)
+|--| .eslintrc (eslint for javascript standard)
+|--| .gitignore (git ignore definition file)
+|--| app.js (main file for express js to run application)
+|--| ecosystem.config.js (pm2 server configuration file)
+|--| package.json (node js package configuration file)
+```
 
 ## developer must have knowledge about
 

@@ -45,27 +45,27 @@
   <script type="text/javascript">
    $(document).ready(function () {
      if(window.location.pathname == '/admin/dashboard') {
-      var req = $.ajax({
-              url: '/admin/checkauth',
-              type: "GET",
-              headers: {
-                'x-access-token': localStorage.getItem('token')
-              },
-              contentType: 'application/json; charset=utf-8',
-              success: function (result) {
+      // var req = $.ajax({
+      //         url: '/admin/checkauth',
+      //         type: "GET",
+      //         headers: {
+      //           'x-access-token': localStorage.getItem('token')
+      //         },
+      //         contentType: 'application/json; charset=utf-8',
+      //         success: function (result) {
                 
-                console.log(result)
+      //           console.log(result)
                
-              },
-              error: function (xhr, textStatus, errorThrown) {
+      //         },
+      //         error: function (xhr, textStatus, errorThrown) {
                 
-                if (console) {
-                  console.log(xhr);
-                }
-                localStorage.removeItem('token');
-                location.replace('/admin/');
-              }
-            }); //req
+      //           if (console) {
+      //             console.log(xhr);
+      //           }
+      //           localStorage.removeItem('token');
+      //           location.replace('/admin/');
+      //         }
+      //       }); //req
 
             $("#btnGenerateToken").click(function () {
               $.ajax({
@@ -84,6 +84,8 @@
                 if (console) {
                   console.log(xhr);
                 }
+                 localStorage.removeItem('token');
+                 location.replace('/admin/');
               }
             }); //req
             });
