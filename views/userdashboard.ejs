@@ -1,0 +1,40 @@
+<% include ./layout/header.ejs %>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Invitation Apps</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a id="btnLogout" href="javascript:void(0);">Logout</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<div class="cg-middle" class="container">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h1>Well come to User Dashboard</h1>
+        </div>
+        <div class="panel-footer">Generate the Invite code for log to Apps</div>
+      </div>
+   
+  </div> <!-- /container -->
+  <script type="text/javascript">
+   $(document).ready(function () {
+     if(window.location.pathname == '/user/dashboard') { }
+
+     $("#btnLogout").click(function () {
+        location.replace('/');
+     });
+  
+   });
+  </script>
+<% include ./layout/footer.ejs %>
